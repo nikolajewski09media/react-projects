@@ -1,8 +1,29 @@
 import React from 'react'
 import phoneImg from './images/phone.svg'
+import { useGlobalContext } from './context'
 
 const Hero = () => {
-  return <h2>hero component</h2>
+  const {closeSubmenu} = useGlobalContext();
+  return (
+  <section className="hero">
+    <div className="hero-center">
+      <article className='hero-info'>
+        <h1>Payments infrastructure fore the internet</h1>
+        <p>
+          Millions of companies of alle sizces-from startups to Furtune 500s-use 
+          Stripe's software an APIs to accept payments, send payouts, and 
+          manage thaier businesses online.
+        </p>
+        <button className="btn">
+          Start now
+        </button>
+      </article>
+      <article className="hero-images">
+        <img src={phoneImg} className='phone-img' alt="phone" />
+      </article>
+    </div>
+  </section>
+  )
 }
 
 export default Hero
