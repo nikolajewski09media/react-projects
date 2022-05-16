@@ -1,1 +1,1 @@
-# react-projects -> My rebuild of John Smilga's Tutorial https://react-projects.netlify.app/
+# react-projects -> My own codealong of John Smilga's Tutorial https://react-projects.netlify.app/
